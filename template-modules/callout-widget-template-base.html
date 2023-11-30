@@ -1,0 +1,35 @@
+<!--
+    Title: Callout Widget Template Base
+    Description: A reactive widget for displaying updated callout information on a SharePoint homepage,
+                 automatically updated by Power Automate as data sources change. Also serves as an email template
+                 for notifications. Styled using callout-widget-template-style.html.  You will need the
+                 callout-widget-template-person.html to construct this document. Relevant placeholders are
+                 in the correct spots to build this as static document programmatically.
+    Author: Matthew Picone
+    GitHub: matthewjpicone
+    Created on: 30-11-2023
+    Last Modified: 30-11-2023
+    License: MIT License
+    Contact: mail@matthewpicone.com
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> {{TITLE}} </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {{STYLESHEET}}
+
+</head>
+<body>
+<div class="container">
+  <div class="title">{{TITLE}}</div>
+  <div class="person-tiles">
+
+    {{PERSON}}
+
+  </div>
+</div>
+</body>
+</html>

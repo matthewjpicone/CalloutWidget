@@ -1,0 +1,138 @@
+/* 
+    Callout Widget Stylesheet
+    Description: CSS styling for the Callout Widget used in SharePoint. 
+                 This file styles the container, title, individual person tiles, and responsive design elements.
+    Author: Matthew Picone
+    GitHub: matthewjpicone
+    Created on: 30-11-2023
+    Last Modified: 30-11-2023
+    License: MIT License
+    Contact: mail@matthewpicone.com
+*/
+
+/* Container Styles
+       - Defines styles for the main container that holds the contact cards.
+       - Sets maximum dimensions, centering, and basic styling (background, color, etc.).
+    */
+.container {
+    max-width: 1164px;
+    max-height: 764px;
+    margin: auto;
+    overflow: hidden;
+    padding: 12px;
+    background-color: #0072C6;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styles
+   - Styling for the title inside the container.
+   - Sets font size and margins.
+*/
+.title {
+    font-size: 1.65rem;
+    margin-bottom: 6px;
+    margin-top: 0px;
+}
+
+/* Person Tiles Container
+   - Styles the container that holds all person tiles.
+   - Uses flexbox for a responsive layout.
+*/
+.person-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Person Tile
+   - Styles for each person tile.
+   - Sets dimensions, background, padding, and text alignment.
+   - Includes hover effect for interactivity.
+*/
+.person-tile {
+    flex: 1;
+    min-width: 120px;
+    max-width: 50%;
+    background-color: #FFFFFF;
+    padding: 6px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    color: #333333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* Hover effect for person tiles
+   - Scales up the tile slightly and increases shadow for a popping effect.
+*/
+.person-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Call Date, Name, and Phone Number
+   - Uniform font size for date, name, and phone number in each tile.
+   - Margin adjustments for spacing.
+*/
+.call-date, .name, .phone-number {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design Media Queries
+   - Adjusts font sizes for call date, name, and phone number based on screen size.
+   - Ensures readability on various devices.
+*/
+@media (max-width: 1200px) {
+    .call-date, .name, .phone-number {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .call-date, .name, .phone-number {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .call-date, .name, .phone-number {
+        font-size: 1.3rem;
+    }
+    .person-tile {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .call-date, .name, .phone-number {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .call-date, .name, .phone-number {
+        font-size: 1.1rem;
+    }
+}
+
+/* Scrollbar Hiding
+   - Hides the scrollbar in WebKit-based browsers (like Chrome and Safari).
+   - Also includes styles for hiding scrollbars in Firefox, IE, and Edge.
+*/
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
