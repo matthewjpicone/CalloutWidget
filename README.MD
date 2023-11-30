@@ -39,18 +39,18 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Examples:**
 
 - **Mixed Layout Example**: Showcases a mixed layout presentation.
-  ![Mixed Layout](ExampleWidget_mixed.png)
+  ![Mixed Layout](Example/ExampleWidget_mixed.png)
 
 - **Single Column Example**: Demonstrates a single column layout for simpler displays.
-  ![Single Column](ExampleWidget_singleCol.png)
+  ![Single Column](Example/ExampleWidget_singleCol.png)
 
 - **Compact Size Example**: A compact layout for when space is at a premium.
-  ![Compact Size](ExampleWidget_small.png)
+  ![Compact Size](Example/ExampleWidget_small.png)
 
 - **Two Column Example**: Illustrates a two-column layout for medium-density information display.
-  ![Two Column](ExampleWidget_twoCol.png)
+  ![Two Column](Example/ExampleWidget_twoCol.png)
 
 - **Power Automate Flow**: Provides a visual example of integrating the widget with a Power Automate flow.
-  ![Power Automate Flow](PowerAutomateFlow_example.png)
+  ![Power Automate Flow](Example/PowerAutomateFlow_example.png)
 
 To view a live example of the Callout Widget, click [here](callout-widget.html){:target="_blank"} to open it in a new window.
