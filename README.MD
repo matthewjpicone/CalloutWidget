@@ -53,4 +53,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Power Automate Flow**: Provides a visual example of integrating the widget with a Power Automate flow.
   ![Power Automate Flow](Example/PowerAutomateFlow_example.png)
 
-To view a live example of the Callout Widget, click [here](callout-widget.html){:target="_blank"} to open it in a new window.
+To view a live example of the Callout Widget, click <a href="callout-widget.html" target="_blank">here</a>
+to open it in a new window.
